@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aleksey/CLionProjects/untitled1/common_resources.h">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/connected_components.h">
 			<Option target="untitled1"/>
 		</Unit>

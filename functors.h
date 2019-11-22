@@ -1,17 +1,9 @@
 #ifndef UNTITLED1_FUNCTORS_H
 #define UNTITLED1_FUNCTORS_H
 
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
-#include <string>
-#include <stack>
-#include <queue>
-#include <set>
+#include "common_resources.h"
 
-enum class traversall_type {DFS, BFS, DSU, Kosaraju};
-
-template <traversall_type _type>
+template <bypass_type _type>
 class D_or_B_FS {
     size_t back(std::stack<size_t>& stack) {
         return stack.top();
@@ -59,7 +51,7 @@ public:
         for (auto& v : vertex_table) {
             if (visited.find(v.first) == visited.end()) {
                 connected_components.push_back(
-                        _type == traversall_type::DFS
+                        _type == bypass_type::DFS
                         ? get_one_component(std::stack<size_t>(), vertex_table, v.first, visited)
                         : get_one_component(std::queue<size_t>(), vertex_table, v.first, visited));
             }
@@ -74,7 +66,7 @@ class Kosaraju {
     void dfs_for_ordering (const size_t& v, const std::unordered_map<size_t, std::vector<size_t>>& vertex_table,
             std::unordered_set<size_t>& visited, std::vector<size_t>& order) {
         visited.insert(v);
-        
+
         for (auto& neighbor : vertex_table.at(v)) {
             if (visited.find(neighbor) == visited.end())
                 dfs_for_ordering (neighbor, vertex_table, visited, order);

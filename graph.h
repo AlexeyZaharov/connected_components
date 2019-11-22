@@ -1,21 +1,12 @@
 #ifndef UNTITLED1_GRAPH_H
 #define UNTITLED1_GRAPH_H
 
-#include <vector>
-#include <unordered_set>
-#include <string>
-#include <stack>
-#include <queue>
-#include <unordered_map>
-#include <set>
-
+#include "common_resources.h"
 #include "connected_components.h"
-
-//enum traversall_type {DFS, BFS, DSU, Kosaraju};
 
 class graph {
     std::unordered_map<size_t, std::vector<size_t>> table;
-    traversall_type type_of_traversall;
+    bypass_type type_of_traversall;
 
 public:
     graph(){
