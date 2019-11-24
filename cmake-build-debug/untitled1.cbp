@@ -44,6 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/aleksey/CLionProjects/untitled1/include"/>
+					<Add directory="/Users/aleksey/CLionProjects/untitled1/sources"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
@@ -65,6 +67,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/aleksey/CLionProjects/untitled1/include"/>
+					<Add directory="/Users/aleksey/CLionProjects/untitled1/sources"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
@@ -80,30 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/DSU.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/DSU.h">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/common_resources.h">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/connected_components.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/connected_components.h">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/functors.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/graph.cpp">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/graph.h">
-			<Option target="untitled1"/>
-		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/main.cpp">
 			<Option target="untitled1"/>
 		</Unit>

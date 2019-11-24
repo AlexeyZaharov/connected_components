@@ -123,114 +123,6 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
-DSU.o: DSU.cpp.o
-
-.PHONY : DSU.o
-
-# target to build an object file
-DSU.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/DSU.cpp.o
-.PHONY : DSU.cpp.o
-
-DSU.i: DSU.cpp.i
-
-.PHONY : DSU.i
-
-# target to preprocess a source file
-DSU.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/DSU.cpp.i
-.PHONY : DSU.cpp.i
-
-DSU.s: DSU.cpp.s
-
-.PHONY : DSU.s
-
-# target to generate assembly for a file
-DSU.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/DSU.cpp.s
-.PHONY : DSU.cpp.s
-
-connected_components.o: connected_components.cpp.o
-
-.PHONY : connected_components.o
-
-# target to build an object file
-connected_components.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/connected_components.cpp.o
-.PHONY : connected_components.cpp.o
-
-connected_components.i: connected_components.cpp.i
-
-.PHONY : connected_components.i
-
-# target to preprocess a source file
-connected_components.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/connected_components.cpp.i
-.PHONY : connected_components.cpp.i
-
-connected_components.s: connected_components.cpp.s
-
-.PHONY : connected_components.s
-
-# target to generate assembly for a file
-connected_components.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/connected_components.cpp.s
-.PHONY : connected_components.cpp.s
-
-functors.o: functors.cpp.o
-
-.PHONY : functors.o
-
-# target to build an object file
-functors.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/functors.cpp.o
-.PHONY : functors.cpp.o
-
-functors.i: functors.cpp.i
-
-.PHONY : functors.i
-
-# target to preprocess a source file
-functors.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/functors.cpp.i
-.PHONY : functors.cpp.i
-
-functors.s: functors.cpp.s
-
-.PHONY : functors.s
-
-# target to generate assembly for a file
-functors.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/functors.cpp.s
-.PHONY : functors.cpp.s
-
-graph.o: graph.cpp.o
-
-.PHONY : graph.o
-
-# target to build an object file
-graph.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/graph.cpp.o
-.PHONY : graph.cpp.o
-
-graph.i: graph.cpp.i
-
-.PHONY : graph.i
-
-# target to preprocess a source file
-graph.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/graph.cpp.i
-.PHONY : graph.cpp.i
-
-graph.s: graph.cpp.s
-
-.PHONY : graph.s
-
-# target to generate assembly for a file
-graph.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/graph.cpp.s
-.PHONY : graph.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -267,18 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... untitled1"
-	@echo "... DSU.o"
-	@echo "... DSU.i"
-	@echo "... DSU.s"
-	@echo "... connected_components.o"
-	@echo "... connected_components.i"
-	@echo "... connected_components.s"
-	@echo "... functors.o"
-	@echo "... functors.i"
-	@echo "... functors.s"
-	@echo "... graph.o"
-	@echo "... graph.i"
-	@echo "... graph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

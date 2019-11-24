@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/aleksey/CLionProjects/untitled1/DSU.cpp
-DSU.h
-/Users/aleksey/CLionProjects/untitled1/DSU.h
-
-/Users/aleksey/CLionProjects/untitled1/DSU.h
+../include/DSU.h
 common_resources.h
-/Users/aleksey/CLionProjects/untitled1/common_resources.h
+../include/common_resources.h
 
-/Users/aleksey/CLionProjects/untitled1/common_resources.h
+../include/common_resources.h
 vector
 -
 unordered_set
@@ -30,31 +26,35 @@ queue
 set
 -
 
-/Users/aleksey/CLionProjects/untitled1/connected_components.cpp
+../include/connected_components.h
+common_resources.h
+../include/common_resources.h
+
+../include/graph.h
+common_resources.h
+../include/common_resources.h
+
+../sources/DSU.cpp
+DSU.h
+../sources/DSU.h
+
+../sources/connected_components.cpp
 connected_components.h
-/Users/aleksey/CLionProjects/untitled1/connected_components.h
+../sources/connected_components.h
 functors.cpp
-/Users/aleksey/CLionProjects/untitled1/functors.cpp
+../sources/functors.cpp
 
-/Users/aleksey/CLionProjects/untitled1/connected_components.h
+../sources/functors.cpp
 common_resources.h
-/Users/aleksey/CLionProjects/untitled1/common_resources.h
-
-/Users/aleksey/CLionProjects/untitled1/functors.cpp
-common_resources.h
-/Users/aleksey/CLionProjects/untitled1/common_resources.h
+../sources/common_resources.h
 DSU.cpp
-/Users/aleksey/CLionProjects/untitled1/DSU.cpp
+../sources/DSU.cpp
 
-/Users/aleksey/CLionProjects/untitled1/graph.cpp
+../sources/graph.cpp
 graph.h
-/Users/aleksey/CLionProjects/untitled1/graph.h
+../sources/graph.h
 connected_components.cpp
-/Users/aleksey/CLionProjects/untitled1/connected_components.cpp
-
-/Users/aleksey/CLionProjects/untitled1/graph.h
-common_resources.h
-/Users/aleksey/CLionProjects/untitled1/common_resources.h
+../sources/connected_components.cpp
 
 /Users/aleksey/CLionProjects/untitled1/main.cpp
 iostream

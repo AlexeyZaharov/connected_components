@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled1.dir/DSU.cpp.o"
-  "CMakeFiles/untitled1.dir/connected_components.cpp.o"
-  "CMakeFiles/untitled1.dir/functors.cpp.o"
-  "CMakeFiles/untitled1.dir/graph.cpp.o"
   "CMakeFiles/untitled1.dir/main.cpp.o"
   "untitled1"
   "untitled1.pdb"
