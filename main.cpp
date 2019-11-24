@@ -50,10 +50,10 @@ graph<T> make_graph_from_istream(std::istream& data) {
             T from, to;
             my_graph.set_bypass_type(type_of_bypass);
 
-            while (in >> from) {
+            while (in >> from && in.good()) {
                 my_graph.add_vertex(from);
 
-                while (in.peek() != '\n') {
+                while (in.peek() != '\n' && in.good()) {
                     in >> to;
 
                     if (is_directed) {
@@ -73,15 +73,21 @@ graph<T> make_graph_from_istream(std::istream& data) {
     return my_graph;
 }
 
-int main() {
-    graph<size_t> graph = make_graph_from_istream<size_t>(std::cin);
-    auto sets = graph.find_connected_components();
+int main(int argc, char* argv[]) {
+    if(argc > 2) {
+        std::ifstream fin(argv[1]);
+        std::ofstream fout(argv[2]);
 
-    for (auto& vec : sets) {
-        for (auto& v : vec) {
-            std::cout << v << ' ';
+        if (fin.is_open() && fout.is_open()) {
+            graph<size_t> graph = make_graph_from_istream<size_t>(fin);
+            auto sets = graph.find_connected_components();
+
+            for (auto& vec : sets) {
+                for (size_t i = 0; i < vec.size(); ++i) {
+                    fout << vec[i] << (i == vec.size() - 1 ? '\n' : ' ');
+                }
+            }
         }
-        std::cout << std::endl;
     }
 
     return 0;
