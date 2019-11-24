@@ -80,16 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aleksey/CLionProjects/untitled1/DSU.cpp">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/DSU.h">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/common_resources.h">
 			<Option target="untitled1"/>
 		</Unit>
+		<Unit filename="/Users/aleksey/CLionProjects/untitled1/connected_components.cpp">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/connected_components.h">
 			<Option target="untitled1"/>
 		</Unit>
-		<Unit filename="/Users/aleksey/CLionProjects/untitled1/functors.h">
+		<Unit filename="/Users/aleksey/CLionProjects/untitled1/functors.cpp">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="/Users/aleksey/CLionProjects/untitled1/graph.cpp">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/graph.h">

@@ -1,20 +1,21 @@
-#ifndef UNTITLED1_FUNCTORS_H
-#define UNTITLED1_FUNCTORS_H
+#ifndef UNTITLED1_FUNCTORS_CPP
+#define UNTITLED1_FUNCTORS_CPP
 
 #include "common_resources.h"
+#include "DSU.cpp"
 
-template <bypass_type _type>
+template <bypass_type _type, typename T>
 class D_or_B_FS {
-    size_t back(std::stack<size_t>& stack) {
+    T back(std::stack<T>& stack) {
         return stack.top();
     }
 
-    size_t back(std::queue<size_t>& queue) {
+    T back(std::queue<T>& queue) {
         return queue.front();
     }
 
-    template <typename T>
-    std::vector<size_t> get_one_component(T data_structure, const std::unordered_map<size_t, std::vector<size_t>>& vertex_table,
+    template <typename U>
+    std::vector<size_t> get_one_component(U data_structure, const std::unordered_map<T, std::unordered_set<T>>& vertex_table,
                                const size_t& start, std::unordered_set<size_t>& visited) {
         std::unordered_set<size_t> in_structure;
         std::vector<size_t> component{};
@@ -43,7 +44,7 @@ class D_or_B_FS {
     }
 
 public:
-    std::vector<std::vector<size_t>> operator()(const std::unordered_map<size_t, std::vector<size_t>>& vertex_table) {
+    std::vector<std::vector<size_t>> operator()(const std::unordered_map<T, std::unordered_set<T>>& vertex_table) {
         std::vector<std::vector<size_t>> connected_components{};
 
         std::unordered_set<size_t> visited{};
@@ -52,8 +53,8 @@ public:
             if (visited.find(v.first) == visited.end()) {
                 connected_components.push_back(
                         _type == bypass_type::DFS
-                        ? get_one_component(std::stack<size_t>(), vertex_table, v.first, visited)
-                        : get_one_component(std::queue<size_t>(), vertex_table, v.first, visited));
+                        ? get_one_component(std::stack<T>(), vertex_table, v.first, visited)
+                        : get_one_component(std::queue<T>(), vertex_table, v.first, visited));
             }
         }
 
@@ -61,9 +62,10 @@ public:
     }
 };
 
+template <typename T>
 class Kosaraju {
 
-    void dfs_for_ordering (const size_t& v, const std::unordered_map<size_t, std::vector<size_t>>& vertex_table,
+    static void dfs_for_ordering (const size_t& v, const std::unordered_map<T, std::unordered_set<T>>& vertex_table,
             std::unordered_set<size_t>& visited, std::vector<size_t>& order) {
         visited.insert(v);
 
@@ -75,7 +77,7 @@ class Kosaraju {
         order.push_back (v);
     }
 
-    void dfs_for_searching (const size_t& v, const std::unordered_map<size_t, std::vector<size_t>>& vertex_table,
+    static void dfs_for_searching (const size_t& v, const std::unordered_map<T, std::unordered_set<T>>& vertex_table,
                             std::unordered_set<size_t>& visited, std::vector<size_t>& component) {
         visited.insert(v);
         component.push_back(v);
@@ -88,19 +90,19 @@ class Kosaraju {
 
 public:
 
-    std::vector<std::vector<size_t>> operator()(const std::unordered_map<size_t, std::vector<size_t>>& vertex_table) {
-        std::vector<std::vector<size_t>> connected_components{};
+    std::vector<std::vector<T>> operator()(const std::unordered_map<T, std::unordered_set<T>>& vertex_table) {
+        std::vector<std::vector<T>> connected_components{};
 
-        std::vector<size_t> order{};
-        std::vector<size_t> component{};
+        std::vector<T> order{};
+        std::vector<T> component{};
 
-        std::unordered_map<size_t, std::vector<size_t>> invert_vertex_table{};
-        std::unordered_set<size_t> visited{};
+        std::unordered_map<T, std::unordered_set<T>> invert_vertex_table{};
+        std::unordered_set<T> visited{};
 
         for (auto& elem : vertex_table) {
             invert_vertex_table.insert({elem.first, {}});
             for (auto& vertex : elem.second) {
-                invert_vertex_table[vertex].push_back(elem.first);
+                invert_vertex_table[vertex].insert(elem.first);
             }
         }
 
@@ -125,4 +127,24 @@ public:
     }
 };
 
-#endif //UNTITLED1_FUNCTORS_H
+template <typename T>
+class DSU_for_components {
+public:
+    std::vector<std::vector<size_t>> operator()(const std::unordered_map<T, std::unordered_set<T>>& vertex_table) {
+        DSU<T> dsu;
+
+        for (auto& elem : vertex_table) {
+            dsu.make_set(elem.first);
+        }
+
+        for (auto& elem : vertex_table) {
+            for (auto& edje : elem.second) {
+                dsu.union_sets(elem.first, edje);
+            }
+        }
+
+        return dsu.get_sets();
+    }
+};
+
+#endif //UNTITLED1_FUNCTORS_CPP

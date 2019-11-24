@@ -9,6 +9,6 @@
 #include <queue>
 #include <set>
 
-enum class bypass_type {DFS, BFS, DSU, Kosaraju};
+enum class bypass_type {bad_type, DFS, BFS, DSU_for_unordered, DSU_for_ordered, Kosaraju};
 
 #endif //UNTITLED1_COMMON_RESOURCES_H

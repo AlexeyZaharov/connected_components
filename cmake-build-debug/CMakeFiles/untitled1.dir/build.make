@@ -70,17 +70,77 @@ CMakeFiles/untitled1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aleksey/CLionProjects/untitled1/main.cpp -o CMakeFiles/untitled1.dir/main.cpp.s
 
+CMakeFiles/untitled1.dir/graph.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/graph.cpp.o: ../graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksey/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled1.dir/graph.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/graph.cpp.o -c /Users/aleksey/CLionProjects/untitled1/graph.cpp
+
+CMakeFiles/untitled1.dir/graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/graph.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aleksey/CLionProjects/untitled1/graph.cpp > CMakeFiles/untitled1.dir/graph.cpp.i
+
+CMakeFiles/untitled1.dir/graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/graph.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aleksey/CLionProjects/untitled1/graph.cpp -o CMakeFiles/untitled1.dir/graph.cpp.s
+
+CMakeFiles/untitled1.dir/connected_components.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/connected_components.cpp.o: ../connected_components.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksey/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled1.dir/connected_components.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/connected_components.cpp.o -c /Users/aleksey/CLionProjects/untitled1/connected_components.cpp
+
+CMakeFiles/untitled1.dir/connected_components.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/connected_components.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aleksey/CLionProjects/untitled1/connected_components.cpp > CMakeFiles/untitled1.dir/connected_components.cpp.i
+
+CMakeFiles/untitled1.dir/connected_components.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/connected_components.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aleksey/CLionProjects/untitled1/connected_components.cpp -o CMakeFiles/untitled1.dir/connected_components.cpp.s
+
+CMakeFiles/untitled1.dir/functors.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/functors.cpp.o: ../functors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksey/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled1.dir/functors.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/functors.cpp.o -c /Users/aleksey/CLionProjects/untitled1/functors.cpp
+
+CMakeFiles/untitled1.dir/functors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/functors.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aleksey/CLionProjects/untitled1/functors.cpp > CMakeFiles/untitled1.dir/functors.cpp.i
+
+CMakeFiles/untitled1.dir/functors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/functors.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aleksey/CLionProjects/untitled1/functors.cpp -o CMakeFiles/untitled1.dir/functors.cpp.s
+
+CMakeFiles/untitled1.dir/DSU.cpp.o: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/DSU.cpp.o: ../DSU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aleksey/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled1.dir/DSU.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled1.dir/DSU.cpp.o -c /Users/aleksey/CLionProjects/untitled1/DSU.cpp
+
+CMakeFiles/untitled1.dir/DSU.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled1.dir/DSU.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aleksey/CLionProjects/untitled1/DSU.cpp > CMakeFiles/untitled1.dir/DSU.cpp.i
+
+CMakeFiles/untitled1.dir/DSU.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled1.dir/DSU.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aleksey/CLionProjects/untitled1/DSU.cpp -o CMakeFiles/untitled1.dir/DSU.cpp.s
+
 # Object files for target untitled1
 untitled1_OBJECTS = \
-"CMakeFiles/untitled1.dir/main.cpp.o"
+"CMakeFiles/untitled1.dir/main.cpp.o" \
+"CMakeFiles/untitled1.dir/graph.cpp.o" \
+"CMakeFiles/untitled1.dir/connected_components.cpp.o" \
+"CMakeFiles/untitled1.dir/functors.cpp.o" \
+"CMakeFiles/untitled1.dir/DSU.cpp.o"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1: CMakeFiles/untitled1.dir/main.cpp.o
+untitled1: CMakeFiles/untitled1.dir/graph.cpp.o
+untitled1: CMakeFiles/untitled1.dir/connected_components.cpp.o
+untitled1: CMakeFiles/untitled1.dir/functors.cpp.o
+untitled1: CMakeFiles/untitled1.dir/DSU.cpp.o
 untitled1: CMakeFiles/untitled1.dir/build.make
 untitled1: CMakeFiles/untitled1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aleksey/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aleksey/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable untitled1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
