@@ -87,6 +87,9 @@
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/main.cpp">
 			<Option target="untitled1"/>
 		</Unit>
+		<Unit filename="/Users/aleksey/CLionProjects/untitled1/sources/graph.cpp">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="/Users/aleksey/CLionProjects/untitled1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

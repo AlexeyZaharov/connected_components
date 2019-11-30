@@ -1,3 +1,6 @@
+#ifndef UNTITLED1_DSU_TEMPLATE_IMPLEMENTATION_H
+#define UNTITLED1_DSU_TEMPLATE_IMPLEMENTATION_H
+
 #include "DSU.h"
 
 template <typename T>
@@ -56,3 +59,5 @@ DSU<T>::~DSU() {
         delete node.second;
     }
 }
+
+#endif //UNTITLED1_DSU_TEMPLATE_IMPLEMENTATION_H

@@ -8,7 +8,8 @@
 #include <stack>
 #include <queue>
 #include <set>
+#include <sstream>
 
-enum class bypass_type {bad_type, DFS, BFS, DSU_for_unordered, DSU_for_ordered, Kosaraju};
+enum class bypass_type {bad_type, DFS, BFS, DSU, Kosaraju};
 
 #endif //UNTITLED1_COMMON_RESOURCES_H

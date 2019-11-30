@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sources/graph.o: sources/graph.cpp.o
+
+.PHONY : sources/graph.o
+
+# target to build an object file
+sources/graph.cpp.o:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sources/graph.cpp.o
+.PHONY : sources/graph.cpp.o
+
+sources/graph.i: sources/graph.cpp.i
+
+.PHONY : sources/graph.i
+
+# target to preprocess a source file
+sources/graph.cpp.i:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sources/graph.cpp.i
+.PHONY : sources/graph.cpp.i
+
+sources/graph.s: sources/graph.cpp.s
+
+.PHONY : sources/graph.s
+
+# target to generate assembly for a file
+sources/graph.cpp.s:
+	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/sources/graph.cpp.s
+.PHONY : sources/graph.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sources/graph.o"
+	@echo "... sources/graph.i"
+	@echo "... sources/graph.s"
 .PHONY : help
 
 

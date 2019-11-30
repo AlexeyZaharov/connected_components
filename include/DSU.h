@@ -32,3 +32,5 @@ class DSU {
     };
 
 #endif //UNTITLED1_DSU_H
+
+#include "DSU_template_implementation.h"
